@@ -1,3 +1,4 @@
+use regex::Regex;
 
 fn main(){
     let numero_1:String = "123".to_string();

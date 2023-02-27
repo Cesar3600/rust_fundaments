@@ -12,7 +12,15 @@ fn main(){
 
     let edad_int:u8 = edad.trim().parse().unwrap();
     
-    println!("Buenos dias {}, ya tienes {} de edad",nombre,edad_int);
+    if edad_int >= 18 && edad_int != 30 {
+        println!("{}, tienes {} puedes ingresar a la discoteca", nombre, edad_int)
+    } else if edad_int < 18 {
+        println!("Aun eres menor de edad, no puedes ingresar")
+    }else if edad_int ==30 {
+        println!("no me caen los de 30, no entras!! ")
+    }
+
+    //println!("Buenos dias {}, ya tienes {} de edad",nombre,edad_int);
     
 
 }
